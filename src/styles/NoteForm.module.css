@@ -1,0 +1,115 @@
+/* src/styles/NoteForm.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    color: #333333;
+  }
+  
+  .input, .textarea {
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .input:focus, .textarea:focus {
+    border-color: #6200ea;
+  }
+  
+  .textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .colorPicker, .fileUpload {
+    display: flex;
+    align-items: center;
+  }
+  
+  .colorPicker label, .fileUpload label {
+    font-size: 24px;
+    color: #6200ea;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .colorPicker input, .fileUpload input {
+    display: none;
+  }
+  
+  .colorPicker input:checked + label {
+    color: #3700b3;
+  }
+  
+  .addButton {
+    padding: 12px;
+    background-color: #6200ea;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .addButton:hover {
+    background-color: #3700b3;
+  }
+  
+  .preview {
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .preview h3 {
+    color: #6200ea;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .preview p {
+    color: #555555;
+    font-size: 16px;
+  }
+  
+  .previewImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  

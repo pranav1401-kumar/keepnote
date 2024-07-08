@@ -1,0 +1,10 @@
+/* src/styles/Header.module.css */
+.header {
+    background-color: #202124;
+    padding: 20px;
+    text-align: center;
+    color: #e8eaed;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

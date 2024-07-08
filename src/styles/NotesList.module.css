@@ -1,0 +1,63 @@
+/* src/styles/NoteList.module.css */
+.noteList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .note {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+  }
+  
+  .note:hover {
+    transform: translateY(-5px);
+  }
+  
+  .note h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .note p {
+    color: #666;
+    font-size: 16px;
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+  
+  .note .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .note .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6200ea;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .note .actions button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .note img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  

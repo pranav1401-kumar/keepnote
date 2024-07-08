@@ -1,0 +1,60 @@
+
+.note {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .note h3 {
+    margin: 0 0 10px 0;
+    color: #6200ea;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .note p {
+    margin: 0 0 10px 0;
+    color: #555555;
+    font-size: 16px;
+  }
+  
+  .note .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .note .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .note .actions button {
+    background: none;
+    border: none;
+    color: #6200ea;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .note .actions button:hover {
+    color: #3700b3;
+  }
+  
+  .note .actions button i {
+    pointer-events: none; /* Prevents the icon itself from triggering events */
+  }
+  
